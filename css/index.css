@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400');
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+.banner {
+    font-size: 4rem;
+    padding: 10% 0;
+    box-sizing: border-box;
+    text-align: center; 
+    background-color: rgb(209, 231, 238);
+    font-weight: 200;
+}
+
+.navegacao {
+    display: flex;
+    width: auto;
+    justify-content: flex-start;
+    line-height: 2em;
+    padding: 1em 7%;
+    background-color: lightblue;
+    font-size: 1.2rem;
+    height: calc(2em);
+}
+
+
+
+.item {
+    margin-right: 2em;   
+}
+
+nav .item:last-child {
+    margin-right: 0;
+}
+.item a {
+    text-decoration: none;
+    color: black;
+    transition: font-size 1s;
+}
+
+.item a:hover {
+    font-size: 110%;
+}
+
+h4 {
+    margin-top: 1em; 
+}
+.container {
+    margin: 2em 7%;
+}
+
+.container h3{
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 0.5em;
+}
+
+.container h2 {
+    font-weight: bold;
+    color: #222;
+    font-size: 1.8em;
+    
+    
+}
+
+.container h4 {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    
+}
+
+.container > p {
+    
+    line-height: 1.8;
+    margin: 1em 0;
+    text-align: justify;
+}
+
+.habilidades-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.habilidade-item {
+    margin: 1em 1.5em;
+    padding: 2.5em 2em;
+    box-sizing: border-box;
+    min-width: 15em;
+    flex: 1;
+
+    box-shadow: 2px 10px 2em -10px gray;
+    transition: background-color 2s, box-shadow .5s  ;
+}
+
+.habilidade-item p {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.habilidade-item h3 {
+    font-size: 1rem;
+    margin-bottom: 1.5em;
+    text-transform: capitalize;
+}
+
+.habilidade-item:hover{
+    
+    background-color: rgb(253, 253, 253);
+    box-shadow: 2px 10px 3em -5px gray;
+    
+}
+
+/* .container ul {
+    list-style: 
+} */
+
+.trabalhos-container {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    flex-wrap: wrap;
+    margin: 2em 0;
+}
+
+.item-trabalho {
+    box-shadow: 2px 10px 1em -8px gray;
+    flex: 1;
+    margin: 1em;
+    min-width: 15em;
+    box-sizing: border-box;
+    
+    overflow: hidden;    
+    text-overflow: ellipsis;
+    max-height: 30em;
+    position: relative;
+
+    justify-content: flex-start ;
+    display: flex;
+    flex-flow: column;
+    transition: flex-grow .8s ease-in-out, box-shadow 2s;
+}
+
+.item-trabalho:hover {
+    flex-grow: 2;
+    box-shadow: 2px 10px 2em -0px grey;
+}
+
+.item-trabalho img {
+    width: 100%;
+    max-height: 10em;
+    object-fit: cover; 
+}
+.item-trabalho h3 {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    color: white;
+    text-shadow: 0.2rem 0.2rem 0.5rem black;
+}
+.item-trabalho p {
+    margin: 1em;
+    line-height: 1.8rem;
+}
+
+
+.item-trabalho p:last-child{
+    /* joga o conteudo do ultimo filho para o final do container */
+    margin-top: auto;
+}
+main {
+    margin: 5em 0 ;
+}
+
+footer  {
+    background-color: #222;
+    height: auto;
+    padding: 3em 0;
+    box-sizing: border-box;
+}
+
+footer p {
+    color: white;
+    font-size: 1.2em;
+}
+
+
+
+
+@media (max-width: 32em){
+    .item-trabalho {
+        margin:  1em 0;
+    }
+
+    .habilidade-item {
+        margin: 1em 0;
+    }
+
+    .navegacao {
+        justify-content: space-between;
+    }
+}
